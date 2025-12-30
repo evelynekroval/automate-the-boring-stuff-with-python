@@ -12,6 +12,8 @@ fortune-teller style response from a predefined list of messages.
 
 Logging is configured to track which method was used for each random selection.
 
+Also meditated on using `len(list) - 1` when trying to get the last index.
+
 """
 
 import random
