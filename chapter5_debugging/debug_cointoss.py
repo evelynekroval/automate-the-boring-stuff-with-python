@@ -1,5 +1,5 @@
 import random
-guess = ''
+guess: int | str = '' 
 
 while guess not in ('heads', 'tails'):
     print('Guess the coin toss! Enter heads or tails:')
