@@ -1,0 +1,30 @@
+2025-12-29 12:33:00,316 -  DEBUG -  Start of program
+2025-12-29 12:33:00,316 -  DEBUG -  Calling the `factorial` function.
+2025-12-29 12:33:00,316 -  DEBUG -  Start of factorial(5)
+2025-12-29 12:33:00,316 -  DEBUG -  i is 1, total is 1
+2025-12-29 12:33:00,316 -  DEBUG -  i is 2, total is 2
+2025-12-29 12:33:00,316 -  DEBUG -  i is 3, total is 6
+2025-12-29 12:33:00,316 -  DEBUG -  i is 4, total is 24
+2025-12-29 12:33:00,316 -  DEBUG -  i is 5, total is 120
+2025-12-29 12:33:00,316 -  DEBUG -  End of factorial(5).
+2025-12-29 12:33:00,316 -  DEBUG -  End of program
+2025-12-29 12:40:36,118 -  DEBUG -  Start of program
+2025-12-29 12:40:36,118 -  DEBUG -  Calling the `factorial` function.
+2025-12-29 12:40:36,118 -  DEBUG -  Start of factorial(5)
+2025-12-29 12:40:36,118 -  DEBUG -  i is 1, total is 1
+2025-12-29 12:40:36,118 -  DEBUG -  i is 2, total is 2
+2025-12-29 12:40:36,118 -  DEBUG -  i is 3, total is 6
+2025-12-29 12:40:36,118 -  DEBUG -  i is 4, total is 24
+2025-12-29 12:40:36,118 -  DEBUG -  i is 5, total is 120
+2025-12-29 12:40:36,118 -  DEBUG -  End of factorial(5).
+2025-12-29 12:40:36,118 -  DEBUG -  End of program
+2025-12-29 12:40:43,370 -  DEBUG -  Start of program
+2025-12-29 12:40:43,370 -  DEBUG -  Calling the `factorial` function.
+2025-12-29 12:40:43,370 -  DEBUG -  Start of factorial(5)
+2025-12-29 12:40:43,370 -  DEBUG -  i is 1, total is 1
+2025-12-29 12:40:43,371 -  DEBUG -  i is 2, total is 2
+2025-12-29 12:40:43,371 -  DEBUG -  i is 3, total is 6
+2025-12-29 12:40:43,371 -  DEBUG -  i is 4, total is 24
+2025-12-29 12:40:43,371 -  DEBUG -  i is 5, total is 120
+2025-12-29 12:40:43,371 -  DEBUG -  End of factorial(5).
+2025-12-29 12:40:43,371 -  DEBUG -  End of program
