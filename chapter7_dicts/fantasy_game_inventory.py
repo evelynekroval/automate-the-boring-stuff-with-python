@@ -42,5 +42,24 @@ def display_inventory(inventory):
         item_total += v
         
     print(f"Total number of items: {item_total}")
+    
 
-display_inventory(stuff)
+def add_to_inventory(inventory:dict, added_items:list):
+    # Your code goes here.
+    
+    # For each list item in the new added_items list
+    for item in added_items:
+        # Check if the item already exists as a key in the inventory
+        if item in inventory.keys():
+            # If it does, then add 1 to its value
+            inventory[item] += 1
+        # If it doesn't, add the item as a new key with a default count of 1.    
+        else:
+            inventory.setdefault(item, 1)
+    return inventory
+
+inv = {'gold coin': 42, 'rope': 1}
+dragon_loot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
+inv = add_to_inventory(inv, dragon_loot)
+
+display_inventory(inv)
