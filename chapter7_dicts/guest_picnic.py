@@ -18,3 +18,4 @@ print(' - Apple Pies     ' + str(total_brought(all_guests, 'apple pies')))
 import pprint
 
 pprint.pprint(all_guests)
+
