@@ -10,10 +10,6 @@ STARTING_PIECES = {'a8': 'bR', 'b8': 'bN', 'c8': 'bB', 'd8': 'bQ',
 'g1': 'wN', 'h1': 'wR', 'a2': 'wP', 'b2': 'wP', 'c2': 'wP', 'd2': 'wP',
 'e2': 'wP', 'f2': 'wP', 'g2': 'wP', 'h2': 'wP'}
 
-import pprint
-
-pprint.pprint(STARTING_PIECES)
-
 BOARD_TEMPLATE = """
     a    b    c    d    e    f    g    h
    ____ ____ ____ ____ ____ ____ ____ ____

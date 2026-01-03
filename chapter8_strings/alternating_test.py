@@ -1,3 +1,4 @@
+# TODO uv add automateboringstuff3 once internet knocking about
 import pyperclip
 
 text = pyperclip.paste()  # Get the text off the clipboard.

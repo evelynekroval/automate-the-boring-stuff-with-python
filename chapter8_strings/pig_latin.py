@@ -1,3 +1,5 @@
+"""Just what in the fuck is happening here? :)"""
+
 # English to pig latin
 print('Enter the English message to translate into pig latin:')
 message = input()
