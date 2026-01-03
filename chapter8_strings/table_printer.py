@@ -32,6 +32,8 @@ def print_table(tableData:list) -> None: # Because we're printing, not storing.
         for i in range(len(tableData[index])):
             print(tableData[index][i].rjust(colWidth))
 
+    # The sloppy solution.
+    # TODO: Make this more iterable... But I guess the problem was very local and I was told to design it according to certain rules... Idk... Maybe just move on, there'll be other conquests.
     x = 0
     for i in range(len(tableData[0])):
         print(tableData[0][x].rjust(colWidths[0]),
