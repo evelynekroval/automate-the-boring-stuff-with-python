@@ -27,11 +27,7 @@ def print_table(tableData:list) -> None: # Because we're printing, not storing.
         # After inner loop complete, ask the outer loop that for each index
         # It replace the colWidths list with the various lengths
         colWidths[index] = max(item_length) # produces [8, 5, 5]
-     
-    for index, colWidth in enumerate(colWidths):
-        for i in range(len(tableData[index])):
-            print(tableData[index][i].rjust(colWidth))
-
+        
     # The sloppy solution.
     # TODO: Make this more iterable... But I guess the problem was very local and I was told to design it according to certain rules... Idk... Maybe just move on, there'll be other conquests.
     x = 0
