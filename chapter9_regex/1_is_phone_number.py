@@ -2,6 +2,7 @@
 Phone Number Detection Module
 This module provides functionality to detect phone numbers in text using a basic
 pattern matching approach without regular expressions.
+
 Functions
 ---------
 is_phone_number(text: str) -> bool

@@ -8,10 +8,10 @@ Topics covered:
 - Negative character classes: [^aeiou] for matching everything except specified chars
 - Escape characters in character classes
 - Shorthand character classes:
-    - \\d: digits [0-9]
-    - \\w: word characters (alphanumeric + underscore)
-    - \\s: whitespace characters (space, tab, newline)
-    - \\D, \\W, \\S: negations of the above
+    - \d: digits [0-9]
+    - \w: word characters (alphanumeric + underscore)
+    - \s: whitespace characters (space, tab, newline)
+    - \D, \W, \S: negations of the above
 - Quantifiers: + for one or more occurrences
 - Dot (.) wildcard: matches any character except newline
 - Escaping the dot: \\. to match literal periods
