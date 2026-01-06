@@ -1,3 +1,16 @@
+"""
+Demonstrates the difference between findall() with grouped and ungrouped regex patterns.
+This module shows how the re.findall() method behaves differently depending on
+whether the regex pattern contains groups (parentheses) or not:
+- Without groups: Returns a list of strings, where each string is a complete match.
+- With groups: Returns a list of tuples, where each tuple contains the captured
+    groups from a single match.
+Examples:
+        Ungrouped pattern r'\d{3}-\d{3}-\d{4}':
+                ['415-555-9999', '212-555-0000']
+        Grouped pattern r'(\d{3})-(\d{3})-(\d{4})':
+                [('415', '555', '9999'), ('212', '555', '0000')]
+"""
 import re
 
 pattern = re.compile(r'\d{3}-\d{3}-\d{4}') # This regex has no groups.

@@ -1,3 +1,23 @@
+"""
+Character Classes and Special Characters in Regular Expressions
+This module demonstrates the use of character classes and special characters
+in regular expressions using Python's re module.
+Topics covered:
+- Basic character classes: [aeiou] for matching specific characters
+- Character ranges: [a-zA-Z0-9] for matching ranges of letters/numbers
+- Negative character classes: [^aeiou] for matching everything except specified chars
+- Escape characters in character classes
+- Shorthand character classes:
+    - \\d: digits [0-9]
+    - \\w: word characters (alphanumeric + underscore)
+    - \\s: whitespace characters (space, tab, newline)
+    - \\D, \\W, \\S: negations of the above
+- Quantifiers: + for one or more occurrences
+- Dot (.) wildcard: matches any character except newline
+- Escaping the dot: \\. to match literal periods
+Examples demonstrate practical usage of each concept with various text patterns.
+"""
+
 import re
 
 

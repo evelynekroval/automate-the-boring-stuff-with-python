@@ -1,3 +1,34 @@
+"""
+Phone Number Detection Module
+This module provides functionality to detect phone numbers in text using a basic
+pattern matching approach without regular expressions.
+Functions
+---------
+is_phone_number(text: str) -> bool
+    Validates whether a given text string matches the phone number format XXX-XXX-XXXX,
+    where X represents a decimal digit.
+    Parameters:
+        text (str): The string to validate as a phone number.
+    Returns:
+        bool: True if the text matches the phone number format, False otherwise.
+    Format Requirements:
+        - Exactly 12 characters long
+        - First 3 characters: digits (area code)
+        - 4th character: dash (-)
+        - Next 3 characters: digits (exchange code)
+        - 8th character: dash (-)
+        - Last 4 characters: digits (subscriber number)
+    Example:
+        >>> is_phone_number('415-555-1011')
+        True
+        >>> is_phone_number('415-5551011')
+        False
+Example Usage
+-------------
+The module demonstrates finding phone numbers in a message string by iterating
+through all possible 12-character segments and validating each one.
+"""
+
 def is_phone_number(text):
     if len(text) != 12:  # Phone numbers have exactly 12 characters.
         return False
