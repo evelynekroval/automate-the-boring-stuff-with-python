@@ -1,4 +1,58 @@
+"""
+Demonstrates file reading and writing operations in Python using pathlib and built-in file methods.
+This module covers three main aspects of working with files:
+1. Reading files - extracting text content from existing files
+2. Writing files - creating new files or modifying existing ones
+3. Using 'with' statements - proper resource management for file operations
+Key Concepts:
+Reading Files:
+- Use open() with 'r' mode (read mode - this is the default)
+- Always specify encoding='UTF-8' for proper character rendering
+- .read() returns the entire file as one string
+- .readlines() returns a list where each line is a separate string (better for large files)
+Writing Files:
+- Use 'w' mode to write (overwrites existing content completely)
+- Use 'a' mode to append (adds to the end of existing content)
+- Always call .close() when done to save changes and free up system resources
+- Remember to specify encoding='UTF-8' when writing too
+The 'with' Statement (Context Manager):
+- Automatically handles opening AND closing files
+- Prevents resource leaks if your code crashes
+- Cleaner syntax - no need to remember .close()
+- The file automatically closes when the indented block ends
+- This is the RECOMMENDED way to work with files in modern Python
+Examples:
+    Reading entire file as string:
+        >>> with open('example.txt', encoding='UTF-8') as f:
+        ...     content = f.read()
+        ...     print(content)
+        Hello, world!
+    Reading file line by line:
+        >>> with open('poem.txt', encoding='UTF-8') as f:
+        ...     lines = f.readlines()
+        ...     for line in lines:
+        ...         print(line.strip())
+        Roses are red
+        Violets are blue
+    Writing to a new file:
+        >>> with open('output.txt', 'w', encoding='UTF-8') as f:
+        ...     f.write('This is new content')
+    Appending to existing file:
+        >>> with open('log.txt', 'a', encoding='UTF-8') as f:
+        ...     f.write('New log entry\n')
+Common Mistakes to Avoid:
+- Forgetting to close files (use 'with' to avoid this!)
+- Not specifying encoding (can cause weird character issues)
+- Using 'w' mode when you meant 'a' (you'll lose all existing content!)
+- Trying to read a file that doesn't exist (causes FileNotFoundError)
+Note:
+    The 'with' statement is Python's way of guaranteeing cleanup operations happen,
+    even if something goes wrong. It's like having a responsible friend who always
+    turns off the lights when leaving a room, no matter how you exit!
+"""
+
 from pathlib import Path
+
 
 ###################
 # 1 Reading Files #
