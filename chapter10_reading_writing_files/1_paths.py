@@ -1,4 +1,4 @@
-""""""
+
 """
 Demonstrates basic usage of the pathlib.Path class for cross-platform file path handling.
 This module shows how to create and manipulate file paths in a platform-independent way

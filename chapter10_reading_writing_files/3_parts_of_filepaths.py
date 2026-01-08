@@ -39,6 +39,6 @@ Parents[0] is: {Path.cwd().parents[0]}
 Parents[1] is: {Path.cwd().parents[1]}
 Parents[2] is: {Path.cwd().parents[2]}
 
-Note that it works 'backwards' towards root folder"""
+Note that it works 'backwards' towards root folder."""
 
 print(PARENTS)
