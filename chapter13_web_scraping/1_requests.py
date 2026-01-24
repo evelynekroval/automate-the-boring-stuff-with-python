@@ -37,7 +37,7 @@ type(response)
 # <class 'requests.models.Response'>
 
 # You can validate the request went through via
-response.status_code == requests.codes.ok
+response.status_code == requests.codes.ok # type: ignore
 
 # Or by using the .raise.for.status() method, which
 # Will raise an exception if no content received, 
